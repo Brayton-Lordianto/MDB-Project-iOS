@@ -8,14 +8,13 @@
 import SwiftUI
 
 struct ContentView: View {
+    @StateObject var drawingViewModel = DrawingViewModel()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+        NavigationStack {
+            NavigationLink("Go to Drawing") {
+                CanvasView(drawing: $drawingViewModel.drawing)
+            }
         }
-        .padding()
     }
 }
 

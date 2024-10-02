@@ -11,6 +11,11 @@
 		41F863F42CABBF28004C82C7 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F863F32CABBF28004C82C7 /* ContentView.swift */; };
 		41F863F62CABBF29004C82C7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F863F52CABBF29004C82C7 /* Assets.xcassets */; };
 		41F863F92CABBF29004C82C7 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F863F82CABBF29004C82C7 /* Preview Assets.xcassets */; };
+		41F864042CABC087004C82C7 /* DrawingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F864032CABC087004C82C7 /* DrawingViewModel.swift */; };
+		41F864062CABC141004C82C7 /* CanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F864052CABC141004C82C7 /* CanvasView.swift */; };
+		41F864082CABC4C0004C82C7 /* DrawSpace.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F864072CABC4C0004C82C7 /* DrawSpace.swift */; };
+		41F8640A2CABC68F004C82C7 /* DraggableImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F864092CABC68F004C82C7 /* DraggableImageView.swift */; };
+		41F8640C2CABC941004C82C7 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F8640B2CABC941004C82C7 /* ImagePicker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +24,11 @@
 		41F863F32CABBF28004C82C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41F863F52CABBF29004C82C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		41F863F82CABBF29004C82C7 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		41F864032CABC087004C82C7 /* DrawingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewModel.swift; sourceTree = "<group>"; };
+		41F864052CABC141004C82C7 /* CanvasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CanvasView.swift; sourceTree = "<group>"; };
+		41F864072CABC4C0004C82C7 /* DrawSpace.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawSpace.swift; sourceTree = "<group>"; };
+		41F864092CABC68F004C82C7 /* DraggableImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DraggableImageView.swift; sourceTree = "<group>"; };
+		41F8640B2CABC941004C82C7 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +63,8 @@
 			children = (
 				41F863F12CABBF28004C82C7 /* MDB_ProjectApp.swift */,
 				41F863F32CABBF28004C82C7 /* ContentView.swift */,
+				41F864022CABC074004C82C7 /* ViewModel-Model */,
+				41F863FF2CABBF63004C82C7 /* View */,
 				41F863F52CABBF29004C82C7 /* Assets.xcassets */,
 				41F863F72CABBF29004C82C7 /* Preview Content */,
 			);
@@ -65,6 +77,25 @@
 				41F863F82CABBF29004C82C7 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		41F863FF2CABBF63004C82C7 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				41F864052CABC141004C82C7 /* CanvasView.swift */,
+				41F8640B2CABC941004C82C7 /* ImagePicker.swift */,
+				41F864072CABC4C0004C82C7 /* DrawSpace.swift */,
+				41F864092CABC68F004C82C7 /* DraggableImageView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		41F864022CABC074004C82C7 /* ViewModel-Model */ = {
+			isa = PBXGroup;
+			children = (
+				41F864032CABC087004C82C7 /* DrawingViewModel.swift */,
+			);
+			path = "ViewModel-Model";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +170,11 @@
 			files = (
 				41F863F42CABBF28004C82C7 /* ContentView.swift in Sources */,
 				41F863F22CABBF28004C82C7 /* MDB_ProjectApp.swift in Sources */,
+				41F864062CABC141004C82C7 /* CanvasView.swift in Sources */,
+				41F8640C2CABC941004C82C7 /* ImagePicker.swift in Sources */,
+				41F864082CABC4C0004C82C7 /* DrawSpace.swift in Sources */,
+				41F8640A2CABC68F004C82C7 /* DraggableImageView.swift in Sources */,
+				41F864042CABC087004C82C7 /* DrawingViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
