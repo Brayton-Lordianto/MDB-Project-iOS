@@ -2,12 +2,11 @@
 //  DraggableImageView.swift
 //  MDB-Project
 //
-//  Created by Brayton Lordianto on 9/30/24.
+//  Created by Brayton Lordianto and Amol Budhiraja on 9/30/24.
 //
 
 import SwiftUI
 
-// we have to not only make this daraggable, but rotatable and zoomable
 class DraggableImageView: UIImageView {
     var beganPoint: CGPoint? = nil
     var originCenter: CGPoint? = nil
@@ -23,13 +22,15 @@ class DraggableImageView: UIImageView {
     }
     
     private func setupGestureRecognizers() {
-        center = .init(x:200, y: 200)
+        center = .init(x: 200, y: 200)
         
-        // Add UIPinchGestureRecognizer to the view
         let pinchGestureRecognizer = UIPinchGestureRecognizer(target: self, action: #selector(handlePinch(_:)))
         let rotateGestureRecognizer = UIRotationGestureRecognizer(target: self, action: #selector(handleRotation(_:)))
+        let longPressGestureRecognizer = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPress(_:)))
+
         self.addGestureRecognizer(pinchGestureRecognizer)
         self.addGestureRecognizer(rotateGestureRecognizer)
+        self.addGestureRecognizer(longPressGestureRecognizer) // Add long press gesture recognizer
     }
     
     @objc func handlePinch(_ gestureRecognizer: UIPinchGestureRecognizer) {
@@ -45,36 +46,31 @@ class DraggableImageView: UIImageView {
         self.transform = self.transform.rotated(by: angle)
         gestureRecognizer.rotation = 0
     }
-        
+    
+    @objc func handleLongPress(_ gestureRecognizer: UILongPressGestureRecognizer) {
+        if gestureRecognizer.state == .began {
+            self.removeFromSuperview()
+        }
+    }
+    
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
-        print("began ")
-        if let position = touches.first?.location(in: superview){
+        print("began")
+        if let position = touches.first?.location(in: superview) {
             beganPoint = position
             originCenter = center
         }
     }
-    override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-    }
-    
+
     override func touchesMoved(_ touches: Set<UITouch>, with event: UIEvent?) {
         let touch = touches.first
         
-        // delete if tapped many times
-        if let taps = touch?.tapCount, taps >= 2 {
-            self.removeFromSuperview()
-            return
-        }
-        
-        // update location
         if let position = touch?.location(in: superview),
            let beganX = beganPoint?.x,
            let beganY = beganPoint?.y,
            let originX = originCenter?.x,
-           let originY = originCenter?.y
-        {
+           let originY = originCenter?.y {
             let newPosition = CGPoint(x: position.x - beganX, y: position.y - beganY)
             center = CGPoint(x: originX + newPosition.x, y: originY + newPosition.y)
         }
-        
     }
 }

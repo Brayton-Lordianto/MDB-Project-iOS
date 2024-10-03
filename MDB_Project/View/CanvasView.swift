@@ -2,7 +2,7 @@
 //  CanvasView.swift
 //  MDB-Project
 //
-//  Created by Brayton Lordianto on 9/30/24.
+//  Created by Brayton Lordianto and Amol Budhiraja on 9/30/24.
 //
 
 import SwiftUI
@@ -36,7 +36,6 @@ struct CanvasView: View {
                     .background(Color.blue)
                     .cornerRadius(1000)
                 
-                    
                 Spacer()
             }
             
