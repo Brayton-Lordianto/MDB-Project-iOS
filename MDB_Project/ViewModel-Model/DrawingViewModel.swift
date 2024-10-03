@@ -6,6 +6,7 @@
 //
 
 import Foundation
+import UIKit
 import PencilKit
 
 struct DrawingModel {
@@ -14,17 +15,17 @@ struct DrawingModel {
     var isSelected: Bool = false
     var overlaidImages = [overlaidImage]()
     var idImage = UIImage()
-    
+
     struct overlaidImage {
         var image: UIImage
         var center = CGPoint()
         var scale = CGAffineTransform(scaleX: 1, y: 1)
         var rotation = CGAffineTransform(rotationAngle: 0)
     }
-    
+
     init() {
         self.canvas = .init()
-        self.name = "untitiled"
+        self.name = "untitled"
     }
 }
 
@@ -36,9 +37,22 @@ extension DrawingModel {
         self.canvas.addSubview(imageView)
         print(self.canvas.subviews.count)
     }
+    
+    // Method to create a snapshot view for sharing
+    func createExportableView() -> UIView {
+        // Render the canvas and its subviews into an image
+        let renderer = UIGraphicsImageRenderer(bounds: canvas.bounds)
+        let snapshotImage = renderer.image { context in
+            canvas.layer.render(in: context.cgContext)
+        }
+        
+        // Create an image view with the snapshot
+        let imageView = UIImageView(image: snapshotImage)
+        imageView.frame = canvas.bounds
+        return imageView
+    }
 }
 
-// MARK: if you want to add more drawings you can edit these and stuff
 class DrawingViewModel: ObservableObject {
     @Published var drawing = DrawingModel()
 }
