@@ -16,9 +16,9 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "41F863ED2CABBF28004C82C7"
-               BuildableName = "MDB-Project.app"
-               BlueprintName = "MDB-Project"
-               ReferencedContainer = "container:MDB-Project.xcodeproj">
+               BuildableName = "MDB_Project.app"
+               BlueprintName = "MDB_Project"
+               ReferencedContainer = "container:MDB_Project.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
       </BuildActionEntries>
@@ -45,9 +45,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41F863ED2CABBF28004C82C7"
-            BuildableName = "MDB-Project.app"
-            BlueprintName = "MDB-Project"
-            ReferencedContainer = "container:MDB-Project.xcodeproj">
+            BuildableName = "MDB_Project.app"
+            BlueprintName = "MDB_Project"
+            ReferencedContainer = "container:MDB_Project.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </LaunchAction>
@@ -62,9 +62,9 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "41F863ED2CABBF28004C82C7"
-            BuildableName = "MDB-Project.app"
-            BlueprintName = "MDB-Project"
-            ReferencedContainer = "container:MDB-Project.xcodeproj">
+            BuildableName = "MDB_Project.app"
+            BlueprintName = "MDB_Project"
+            ReferencedContainer = "container:MDB_Project.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
    </ProfileAction>

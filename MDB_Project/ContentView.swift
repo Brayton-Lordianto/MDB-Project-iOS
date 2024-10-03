@@ -10,10 +10,13 @@ import SwiftUI
 struct ContentView: View {
     @StateObject var drawingViewModel = DrawingViewModel()
     var body: some View {
-        NavigationStack {
-            NavigationLink("Go to Drawing") {
+            
+            VStack(alignment: .center) {
+                Text("PicDraw 🖌️")
+                    .bold()
+                    .font(.title)
+                
                 CanvasView(drawing: $drawingViewModel.drawing)
-            }
         }
     }
 }

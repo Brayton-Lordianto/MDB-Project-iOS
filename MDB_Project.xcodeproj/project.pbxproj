@@ -19,7 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		41F863EE2CABBF28004C82C7 /* MDB-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "MDB-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		41F863EE2CABBF28004C82C7 /* MDB_Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MDB_Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F863F12CABBF28004C82C7 /* MDB_ProjectApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MDB_ProjectApp.swift; sourceTree = "<group>"; };
 		41F863F32CABBF28004C82C7 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		41F863F52CABBF29004C82C7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -45,7 +45,7 @@
 		41F863E52CABBF28004C82C7 = {
 			isa = PBXGroup;
 			children = (
-				41F863F02CABBF28004C82C7 /* MDB-Project */,
+				41F863F02CABBF28004C82C7 /* MDB_Project */,
 				41F863EF2CABBF28004C82C7 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,12 +53,12 @@
 		41F863EF2CABBF28004C82C7 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				41F863EE2CABBF28004C82C7 /* MDB-Project.app */,
+				41F863EE2CABBF28004C82C7 /* MDB_Project.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		41F863F02CABBF28004C82C7 /* MDB-Project */ = {
+		41F863F02CABBF28004C82C7 /* MDB_Project */ = {
 			isa = PBXGroup;
 			children = (
 				41F863F12CABBF28004C82C7 /* MDB_ProjectApp.swift */,
@@ -68,7 +68,7 @@
 				41F863F52CABBF29004C82C7 /* Assets.xcassets */,
 				41F863F72CABBF29004C82C7 /* Preview Content */,
 			);
-			path = "MDB-Project";
+			path = MDB_Project;
 			sourceTree = "<group>";
 		};
 		41F863F72CABBF29004C82C7 /* Preview Content */ = {
@@ -101,9 +101,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		41F863ED2CABBF28004C82C7 /* MDB-Project */ = {
+		41F863ED2CABBF28004C82C7 /* MDB_Project */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 41F863FC2CABBF29004C82C7 /* Build configuration list for PBXNativeTarget "MDB-Project" */;
+			buildConfigurationList = 41F863FC2CABBF29004C82C7 /* Build configuration list for PBXNativeTarget "MDB_Project" */;
 			buildPhases = (
 				41F863EA2CABBF28004C82C7 /* Sources */,
 				41F863EB2CABBF28004C82C7 /* Frameworks */,
@@ -113,9 +113,9 @@
 			);
 			dependencies = (
 			);
-			name = "MDB-Project";
+			name = MDB_Project;
 			productName = "MDB-Project";
-			productReference = 41F863EE2CABBF28004C82C7 /* MDB-Project.app */;
+			productReference = 41F863EE2CABBF28004C82C7 /* MDB_Project.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -133,7 +133,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 41F863E92CABBF28004C82C7 /* Build configuration list for PBXProject "MDB-Project" */;
+			buildConfigurationList = 41F863E92CABBF28004C82C7 /* Build configuration list for PBXProject "MDB_Project" */;
 			compatibilityVersion = "Xcode 14.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -146,7 +146,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				41F863ED2CABBF28004C82C7 /* MDB-Project */,
+				41F863ED2CABBF28004C82C7 /* MDB_Project */,
 			);
 		};
 /* End PBXProject section */
@@ -307,8 +307,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MDB-Project/Preview Content\"";
-				DEVELOPMENT_TEAM = X622SX6D57;
+				DEVELOPMENT_ASSET_PATHS = "\"MDB_Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 7Y4M3L7HSF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -321,7 +321,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BL.MDB-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdb.swift.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -336,8 +336,8 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_ASSET_PATHS = "\"MDB-Project/Preview Content\"";
-				DEVELOPMENT_TEAM = X622SX6D57;
+				DEVELOPMENT_ASSET_PATHS = "\"MDB_Project/Preview Content\"";
+				DEVELOPMENT_TEAM = 7Y4M3L7HSF;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -350,7 +350,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = "BL.MDB-Project";
+				PRODUCT_BUNDLE_IDENTIFIER = com.mdb.swift.project;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -361,7 +361,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		41F863E92CABBF28004C82C7 /* Build configuration list for PBXProject "MDB-Project" */ = {
+		41F863E92CABBF28004C82C7 /* Build configuration list for PBXProject "MDB_Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41F863FA2CABBF29004C82C7 /* Debug */,
@@ -370,7 +370,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		41F863FC2CABBF29004C82C7 /* Build configuration list for PBXNativeTarget "MDB-Project" */ = {
+		41F863FC2CABBF29004C82C7 /* Build configuration list for PBXNativeTarget "MDB_Project" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				41F863FD2CABBF29004C82C7 /* Debug */,
