@@ -17,10 +17,7 @@ struct DrawingModel {
     var idImage = UIImage()
 
     struct overlaidImage {
-        var image: UIImage
-        var center = CGPoint()
-        var scale = CGAffineTransform(scaleX: 1, y: 1)
-        var rotation = CGAffineTransform(rotationAngle: 0)
+        // Define properties for an image, its position (center), scale, and rotation
     }
 
     init() {
@@ -31,25 +28,11 @@ struct DrawingModel {
 
 extension DrawingModel {
     func overlayImage(image: UIImage) {
-        let imageView = DraggableImageView(image: image)
-        imageView.isUserInteractionEnabled = true
-        imageView.isMultipleTouchEnabled = true
-        self.canvas.addSubview(imageView)
-        print(self.canvas.subviews.count)
+        // Implement adding an image as a subview to the canvas
     }
     
-    // Method to create a snapshot view for sharing
     func createExportableView() -> UIView {
-        // Render the canvas and its subviews into an image
-        let renderer = UIGraphicsImageRenderer(bounds: canvas.bounds)
-        let snapshotImage = renderer.image { context in
-            canvas.layer.render(in: context.cgContext)
-        }
-        
-        // Create an image view with the snapshot
-        let imageView = UIImageView(image: snapshotImage)
-        imageView.frame = canvas.bounds
-        return imageView
+        // Implement logic to capture the canvas and create a snapshot image
     }
 }
 
